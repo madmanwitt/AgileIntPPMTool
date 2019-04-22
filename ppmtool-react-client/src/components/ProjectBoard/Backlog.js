@@ -1,14 +1,6 @@
 import React, { Component } from "react";
 import ProjectTask from "./ProjectTasks/ProjectTask";
-import styled from "styled-components";
 import { DragDropContext, Droppable, Draggable } from "react-beautiful-dnd";
-
-const Container = styled.div`
-  border: 1px solid lightgrey;
-  border-radius: 2px;
-  padding: 8px;
-  margin-bottom: 8px;
-`;
 
 class Backlog extends Component {
   onDragEnd = result => {};

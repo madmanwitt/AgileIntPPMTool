@@ -1,17 +1,8 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import { deleteProjectTask } from "../../../actions/backlogActions";
-import styled from "styled-components";
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
-import { Draggable } from "react-beautiful-dnd";
-
-const Container = styled.div`
-  border: 1px solid lightgrey;
-  border-radius: 2px;
-  padding: 8px;
-  margin-bottom: 8px;
-`;
 
 class ProjectTask extends Component {
   onDeleteClick(backlog_id, pt_id) {
